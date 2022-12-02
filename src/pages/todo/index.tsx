@@ -7,7 +7,6 @@ import Seo from "../../components/seo"
 import Card from "./card"
 
 
-
 const TodoIndex = ({ data, location }) => {
 
   const siteTitle = "ToDo";
