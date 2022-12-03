@@ -5,6 +5,7 @@ import { serverTimestamp } from "firebase/firestore";
 
 import 'font-awesome/css/font-awesome.min.css';
 
+
 const Card = ({editID, setEditID, editContent, setEditContent, elementID, elementContent}) => {
 
     const delTask = (id) => {

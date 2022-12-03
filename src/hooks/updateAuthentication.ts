@@ -7,12 +7,11 @@ export const handleSignup = (auth, email, password) => {
     }
   ).then(() => {
     alert( 'サインアップしました。' );
+    handleUpdateProfile(auth, {displayName:"ななし"});
     // if (auth.currentUser !== null) {
     //   sendEmailVerification(auth.currentUser);
     //   alert( '登録されたメールアドレスにメッセージを送信しました。\nメールアドレスの検証を完了してください。' )
     // }
-  }).then(() => {
-    handleUpdateProfile(auth, {displayName:"ななし"});
   }).catch(
     () => {alert( '不正なメールアドレスです。' )}
   )
