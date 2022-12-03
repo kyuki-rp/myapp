@@ -29,9 +29,9 @@ export const handleSignin = (auth, email, password) => {
 }
 
 export const handleSignout = (auth) => {
-    auth.signOut();
-    alert( 'ログアウトしました。' );
-    window.location.href = "/account/signin";
+  auth.signOut();
+  alert( 'ログアウトしました。' );
+  window.location.href = "/account/signin";
 };
   
 export const handleDeleteAccount = (auth, password) => {
